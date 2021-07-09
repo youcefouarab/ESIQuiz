@@ -1,0 +1,165 @@
+#mainroot, #sidebar {
+	-fx-background-color: linear-gradient(to bottom, #72c4b5, #56be7d);
+}
+
+#root, #pane, .toggle-button {
+	-fx-background-color:#fff;
+}
+
+.container, .container .viewport {
+	-fx-border-color:transparent;
+	-fx-background-color:#fff;
+}
+
+.date-picker, .text-area .content, .text-area .viewport, #FormationButton,  #NotionButton, #QuizButton, #ApprenantButton, #ProfilButton, #NoteButton {
+	-fx-background-color:transparent;
+}
+
+.text-field, .password-field, .text-area {
+	-fx-background-insets: 0;
+	-fx-background-color:transparent;
+    -fx-border-width: 2px;
+    -fx-border-color: transparent transparent #000 transparent;
+}
+
+.field2, .field2 .text-field {
+	-fx-prompt-text-fill: #fff;
+	-fx-text-fill:#fff;
+}
+
+.field {
+	-fx-prompt-text-fill: #888;
+	-fx-text-fill:#000;
+}
+
+.text-field:focused, .password-field:focused, .text-area:focused {
+    -fx-focus-color: transparent;
+    -fx-border-color: transparent transparent #fff transparent;
+}
+
+.field:focused {
+	-fx-focus-color: transparent;
+    -fx-border-color: transparent transparent #f68378 transparent;
+}
+
+.button, #LogoutButton, #FormationButton:hover,  #NotionButton:hover, #QuizButton:hover, #ApprenantButton:hover , #ProfilButton:hover, #NoteButton:hover,
+.toggle-button:hover, .toggle-button:selected, .courante, .autre:hover {
+	-fx-background-color:  #f68378;
+}
+
+.button:hover, #LogoutButton:hover {
+    -fx-background-color: #dd6459;
+}
+
+.button, .toggle-button:hover, .toggle-button:selected {
+	-fx-text-fill:#fff;
+}
+
+.toggle-button{
+	-fx-text-fill:#f68378;
+}
+
+#titre {
+	-fx-font-size:32px;
+}
+
+.qtitre {
+	-fx-font-size:28px;	
+}
+
+.notion, .aj {
+	-fx-text-fill:#f68378;
+	-fx-font-size:20px;
+	-fx-background-color: #fff;
+	
+}
+
+.notion, .quiz, .toggle-button {
+	-fx-border-color:#f68378;
+}
+.notion:hover, .aj:hover, .edit:hover, .del:hover, .remplacer:hover {
+	-fx-text-fill:#fff;
+	-fx-background-color: #f68378;
+}
+
+.info {
+	-fx-text-fill:#000;
+	-fx-font-size:20px;
+}
+
+.not {
+	-fx-text-fill:#f68378;
+	-fx-font-size:20px;
+}
+
+.ajouter {
+	-fx-font-size:70px;
+}
+
+.edit, .del, .remplacer {
+	-fx-background-color: #fff;
+}
+
+.edit {
+    -fx-graphic: url("images/edit.png");
+}
+
+.edit:hover {
+    -fx-graphic: url("images/edithover.png");
+
+}
+
+.remplacer {
+    -fx-graphic: url("images/replace.png");
+}
+
+.remplacer:hover {
+    -fx-graphic: url("images/replacehover.png");
+}
+
+
+.del {
+    -fx-graphic: url("images/del.png");
+}
+
+.del:hover {
+    -fx-graphic: url("images/delhover.png");
+}
+
+.toggle-button:selected {
+	-fx-graphic: url("images/check.png");
+}
+
+.table-view , .table-view .table-cell{
+	-fx-border-color:#f68378;
+}
+
+.table-view .table-row-cell {
+	-fx-background-color:#fff;
+	-fx-font-size: 18px;
+}
+
+.table-view .table-row-cell:selected {
+	-fx-background-color:#f68378;
+}
+
+.table-view .column-header {
+	-fx-cell-size: 100px;
+	-fx-background-color:#f68378;
+	-fx-font-size: 18px;
+}
+
+.table-view .column-header .label {
+	-fx-text-fill:#fff;
+	-fx-text-wrap:true;
+}
+
+.correct {
+    -fx-graphic: url("images/cor.png");
+    -fx-text-fill:#0c0;
+}
+
+.incorrect {
+    -fx-graphic: url("images/inc.png");
+    -fx-text-fill:#f00;
+}

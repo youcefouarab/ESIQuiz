@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ApprenantFX">
+    <AnchorPane id="sidebar" prefHeight="720.0" prefWidth="300.0">
+        <children>
+            <Button id="ProfilButton" layoutY="255.0" mnemonicParsing="false" onAction="#Profil" prefHeight="70.0" prefWidth="300.0" text="Profil">
+            <font>
+               <Font size="18.0" />
+            </font></Button>
+         <Button id="LogoutButton" layoutX="50.0" layoutY="550.0" mnemonicParsing="false" onAction="#logOut" prefHeight="50.0" prefWidth="200.0" text="Se Deconnecter">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/esiquiz.png" />
+            </image>
+         </ImageView>
+            <Button id="QuizButton" layoutY="325.0" mnemonicParsing="false" onAction="#Quizs" prefHeight="70.0" prefWidth="300.0" text="Quizs">
+            <font>
+               <Font size="18.0" />
+            </font></Button>
+            <Button id="NoteButton" layoutY="395.0" mnemonicParsing="false" onAction="#Notes" prefHeight="70.0" prefWidth="300.0" text="Notes">
+            <font>
+               <Font size="18.0" />
+            </font></Button>
+        </children>
+    </AnchorPane>
+   <Pane fx:id="pane" layoutX="300.0" prefHeight="720.0" prefWidth="980.0">
+      <children>
+         <Label layoutX="404.0" layoutY="113.0" text="Bienvenue à">
+            <font>
+               <Font size="42.0" />
+            </font>
+         </Label>
+         <ImageView fitHeight="162.0" fitWidth="407.0" layoutX="321.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/esiquiz2.png" />
+            </image>
+         </ImageView>
+         <Button layoutX="400.0" layoutY="443.0" mnemonicParsing="false" onAction="#Quizs" prefHeight="53.0" prefWidth="232.0" text="Voir vos quizs">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Button>
+         <Button layoutX="400.0" layoutY="533.0" mnemonicParsing="false" onAction="#Notes" prefHeight="53.0" prefWidth="232.0" text="Consulter vos notes">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Button>
+      </children></Pane>
+
+</AnchorPane>
